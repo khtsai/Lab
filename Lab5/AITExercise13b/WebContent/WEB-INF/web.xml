@@ -1,0 +1,17 @@
+<web-app version="2.4"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/j2ee"
+xsi:schemalocation="http:/java.sun.com/dtd/webapp_
+2_3.dtd">
+	<welcome-file-list>
+		<welcome-file>lab12.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>Exercise13b</servlet-name>
+		<servlet-class>Lab5.Exercise13b</servlet-class>
+	</servlet>
+		<servlet-mapping>
+		<servlet-name>Exercise13b</servlet-name>
+		<url-pattern>/Exercise13b</url-pattern>
+	</servlet-mapping>
+</web-app>

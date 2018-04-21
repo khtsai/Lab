@@ -1,0 +1,99 @@
+<form action="./registration.php" method="get" onsubmit="return ValidateForm(this)">
+	<script type="text/javascript">
+		function ValidateForm(frm) {
+		if (frm.FirstName.value == "") { alert('First Name is required.'); frm.FirstName.focus(); return false; }
+		if (frm.LastName.value == "") { alert('Last Name is required.'); frm.LastName.focus(); return false; }
+		if (frm.StreetAddress.value == "") { alert('Address is required.'); frm.StreetAddress.focus(); return false; }
+		if (frm.Country.value == "") { alert('Country is required.'); frm.Country.focus(); return false; }
+		return true; }
+	</script>
+	<table border="0" cellpadding="5" cellspacing="0" width="600">
+		<tr><td>
+		* - required fields
+		</td></tr><tr> <td>
+		<label for="FirstName">First</label>, <label for="LastName">Last Name*:</label>
+		</td> <td>
+		<input name="FirstName" placeholder="FirstName" type="text" maxlength="60" style="width: 146px;" />
+		<input name="LastName" placeholder="LastName" ype="text" maxlength="60" style="width: 146px;" />
+		</td> </tr> <tr> <td>
+		<label for="Organization">Organization:</label>
+		</td> <td>
+		<input name="Organization" placeholder="unibz" type="text" maxlength="60" style="width: 300px;" />
+		</td> </tr> <tr> <td>
+		<label for="Email">Email address*:</label>
+		</td> <td>
+		<input name="Email" placeholder="123@gmail.com" type="email" maxlength="60" style="width: 300px;" />
+		</td> </tr> <tr> <td>
+		<label for="Phone">Phone:</label>
+		</td> <td>
+		<input name="Phone" type="text" maxlength="43" style="width: 250px;" />
+		</td> </tr> <tr> <td>
+		<label for="StreetAddress">Address*:</label>
+		</td> <td>
+		<input name="StreetAddress" type="text" maxlength="120" style="width: 350px;" />
+		</td> </tr> <tr> <td>
+		<label for="urlHomePage">URL home page*:</label>
+		</td> <td>
+		<input name="urlHomePage" type="url" maxlength="120" style="width: 350px;" />
+		</td> </tr> <tr> <td>
+		<label for="City">City*:</label>
+		</td> <td>
+		<select name="city">
+		  <option value="Bolzano">Bolzano</option>
+		  <option value="Bressanone">Bressanone</option>
+		  <option value="Brunico">Brunico</option>
+		</select>
+		</td> </tr> <tr> <td>
+		<label for="State">State/Province:</label>
+		</td> <td>
+		<input name="State" type="text" maxlength="120" style="width: 300px;" />
+		</td> </tr> <tr> <td>
+		<label for="Zip">Zip/Postal Code:</label>
+		</td> <td>
+		<input name="Zip" type="text" maxlength="30" style="width: 100px;" />
+		</td> </tr> <tr> <td>
+		<label for="paymentMode">Payment Mode:</label>
+		</td> <td>
+		<select name="paymentMode">
+		  <option value="cash">cash</option>
+		  <option value="paypal">paypal</option>
+		  <option value="creditCard">credit card</option>
+		</select>
+		</td> </tr> <tr> <td>
+		<label for="totalPay">Total to pay*:</label>
+		</td> <td>
+		<input name="totalPay" type="number" min="10" max="150" maxlength="120" style="width: 50px;" />
+		</td> </tr> <tr> <td>
+		<label for="startDate">Start date:</label>
+		</td> <td>
+		<input type="date" name="startDate">
+		</td> </tr> <tr> <td>
+		<label for="favoriteColor">Favorite Color:</label>
+		</td> <td>
+		<select name="favoriteColor">
+		<option value="#000000" style="background-color: Black;color: #FFFFFF;">Black</option>
+		<option value="#808080" style="background-color: Gray;">Gray</option>
+		<option value="#A9A9A9" style="background-color: DarkGray;">DarkGray</option>
+		<option value="#D3D3D3" style="background-color: LightGrey;">LightGray</option>
+		<option value="#FFFFFF" style="background-color: White;">White</option>
+		<option value="#7FFFD4" style="background-color: Aquamarine;">Aquamarine</option>
+		<option value="#0000FF" style="background-color: Blue;">Blue</option>
+		<option value="#000080" style="background-color: Navy;color: #FFFFFF;">Navy</option>
+		<option value="#800080" style="background-color: Purple;color: #FFFFFF;">Purple</option>
+		<option value="#FF1493" style="background-color: DeepPink;">DeepPink</option>
+		<option value="#EE82EE" style="background-color: Violet;">Violet</option>
+		<option value="#FFC0CB" style="background-color: Pink;">Pink</option>
+		<option value="#006400" style="background-color: DarkGreen;color: #FFFFFF;">DarkGreen</option>
+		<option value="#008000" style="background-color: Green;color: #FFFFFF;">Green</option>
+		<option value="#9ACD32" style="background-color: YellowGreen;">YellowGreen</option>
+		<option value="#FFFF00" style="background-color: Yellow;">Yellow</option>
+		<option value="#FFA500" style="background-color: Orange;">Orange</option>
+		<option value="#FF0000" style="background-color: Red;">Red</option>
+		<option value="#A52A2A" style="background-color: Brown;">Brown</option>
+		<option value="#DEB887" style="background-color: BurlyWood;">BurlyWood</option>
+		<option value="#F5F5DC" style="background-color: Beige;">Beige</option>		</select>
+		</td> </tr> <tr> <td> 
+		<input name="Submit" type="submit" value="Submit" />
+		</td> </tr>
+	</table>
+</form>
