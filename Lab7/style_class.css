@@ -1,0 +1,34 @@
+.marginHeader{
+    margin: 20px 20px 20px 20px;
+}
+.marginText {
+    margin: 10px 10px 10px 10px;
+}
+.articleTitle{
+    text-transform: uppercase;
+	padding-top: 20px;
+}
+.navSelection{
+	background:#D8D8D8;
+}
+.unibzLogo{
+	width:240px;
+	height:180px;
+    float:right;
+    margin: 10px;
+    border-radius: 10px;
+}
+.blogHeader{
+    margin-right: 10px;
+}
+.leftColumn {
+    width: 80%;
+}
+.rightColumn {
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+}
+.footer{
+    text-align: center;
+}

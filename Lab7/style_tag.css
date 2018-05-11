@@ -1,0 +1,28 @@
+body{ background-color: #73B1B7;
+    color: white;
+    font-family:"Times New Roman", Times, serif;
+}
+a.nav {
+    text-decoration: unset;
+    color:slategrey;
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+}
+a.nav:hover{
+    background:#D8D8D8;
+}
+nav {
+    background-color: rgb(248, 248, 248);
+    float: right;
+    font-size: large;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+section {
+    display: inline-block;
+	width:100%;
+}
+img {
+	opacity: 0.7;
+}
